@@ -1,54 +1,81 @@
-<div class="resume-container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Hijab Zahra | Resume</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
 
   <!-- NAVBAR -->
   <nav class="navbar">
-    <div class="logo">HZ.</div>
+    <div class="nav-container">
 
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#education">Education</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <a href="#home" class="logo">HZ.</a>
+
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <button id="themeToggle" class="theme-btn">🌙</button>
+
     </div>
-
-    <button id="themeToggle" class="theme-btn">☾</button>
   </nav>
 
 
   <!-- HERO -->
-  <header class="hero">
+  <header id="home" class="hero">
 
-    <div class="hero-text">
+    <div class="hero-container">
 
-      <p class="small-heading">HELLO, I'M</p>
+      <div class="hero-text">
 
-      <h1>Hijab <span>Zahra</span></h1>
+        <p class="small-title">HELLO, I'M</p>
 
-      <h2>Web Development Intern</h2>
+        <h1>Hijab <span>Zahra</span></h1>
 
-      <p class="hero-description">
-        A creative learner passionate about web development,
-        artificial intelligence, digital design and technology.
-      </p>
+        <h2>Web Development Intern</h2>
 
-      <div class="hero-buttons">
-        <a href="#contact" class="primary-btn">Contact Me</a>
-        <a href="#projects" class="secondary-btn">View Projects</a>
+        <p class="hero-description">
+          A creative and motivated learner interested in web development,
+          artificial intelligence, digital design and technology.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#contact" class="btn primary-btn">Contact Me</a>
+          <a href="#projects" class="btn secondary-btn">View Projects</a>
+        </div>
+
       </div>
 
-    </div>
 
+      <div class="profile-box">
 
-    <div class="profile-wrapper">
+        <div class="profile-circle">
+          HZ
+        </div>
 
-      <div class="profile-circle">
-        <span>HZ</span>
+        <div class="profile-info">
+          <strong>Web Developer</strong>
+          <span>Creative • Curious • Learning</span>
+        </div>
+
       </div>
-
-      <div class="decorative-circle circle-one"></div>
-      <div class="decorative-circle circle-two"></div>
 
     </div>
 
@@ -56,27 +83,25 @@
 
 
   <!-- ABOUT -->
-  <section class="section" id="about">
+  <section id="about" class="section">
 
-    <div class="section-title">
-      <span>01</span>
+    <div class="section-heading">
+      <p>ABOUT</p>
       <h2>About Me</h2>
     </div>
 
-    <div class="about-content">
+    <div class="about-card">
 
       <p>
-        I am a motivated and creative learner with a strong interest
-        in web development, artificial intelligence and modern technology.
-        I enjoy turning ideas into practical digital projects and
-        continuously improving my technical skills.
+        I am a motivated and creative learner with an interest in
+        web development, artificial intelligence, digital design and
+        modern technology. I enjoy learning new skills and turning
+        ideas into useful digital projects.
       </p>
 
       <p>
-        Currently, I am gaining practical experience as a
-        <strong>Web Development Intern at SpireX Foundation</strong>,
-        where I work with HTML, CSS and JavaScript to create
-        responsive web projects.
+        Currently, I am developing my front-end development skills
+        through practical projects and internship experience.
       </p>
 
     </div>
@@ -85,51 +110,41 @@
 
 
   <!-- EDUCATION -->
-  <section class="section beige-section" id="education">
+  <section id="education" class="section alternate">
 
-    <div class="section-title">
-      <span>02</span>
+    <div class="section-heading">
+      <p>ACADEMIC BACKGROUND</p>
       <h2>Education</h2>
     </div>
 
-    <div class="timeline">
+    <div class="cards">
 
-      <div class="timeline-item">
+      <div class="card">
 
-        <div class="timeline-dot"></div>
+        <div class="card-icon">🎓</div>
 
-        <div class="timeline-content">
+        <h3>FSc Pre-Medical</h3>
 
-          <span class="timeline-date">Higher Secondary Education</span>
+        <p>
+          Higher Secondary School Certificate
+        </p>
 
-          <h3>FSc Pre-Medical</h3>
-
-          <p>
-            Completed higher secondary education with a
-            Pre-Medical background.
-          </p>
-
-        </div>
+        <span class="date">Completed</span>
 
       </div>
 
 
-      <div class="timeline-item">
+      <div class="card">
 
-        <div class="timeline-dot"></div>
+        <div class="card-icon">📚</div>
 
-        <div class="timeline-content">
+        <h3>Matriculation</h3>
 
-          <span class="timeline-date">Secondary Education</span>
+        <p>
+          Science / Biology Group
+        </p>
 
-          <h3>Matriculation</h3>
-
-          <p>
-            Completed secondary education with a
-            Science / Biology background.
-          </p>
-
-        </div>
+        <span class="date">Completed</span>
 
       </div>
 
@@ -139,61 +154,66 @@
 
 
   <!-- SKILLS -->
-  <section class="section" id="skills">
+  <section id="skills" class="section">
 
-    <div class="section-title">
-      <span>03</span>
-      <h2>Skills</h2>
+    <div class="section-heading">
+      <p>WHAT I KNOW</p>
+      <h2>Technical Skills</h2>
     </div>
 
-    <div class="skills-grid">
+    <div class="skills-container">
 
-      <div class="skill-card">
-        <div class="skill-icon">01</div>
-        <h3>HTML</h3>
-        <p>Semantic Web Structure</p>
+      <div class="skill">
+        <div class="skill-top">
+          <span>HTML5</span>
+          <span>90%</span>
+        </div>
+        <div class="progress">
+          <div class="progress-bar html"></div>
+        </div>
       </div>
 
-      <div class="skill-card">
-        <div class="skill-icon">02</div>
-        <h3>CSS</h3>
-        <p>Responsive Web Design</p>
+
+      <div class="skill">
+        <div class="skill-top">
+          <span>CSS3</span>
+          <span>85%</span>
+        </div>
+        <div class="progress">
+          <div class="progress-bar css"></div>
+        </div>
       </div>
 
-      <div class="skill-card">
-        <div class="skill-icon">03</div>
-        <h3>JavaScript</h3>
-        <p>Web Interactivity</p>
+
+      <div class="skill">
+        <div class="skill-top">
+          <span>JavaScript</span>
+          <span>75%</span>
+        </div>
+        <div class="progress">
+          <div class="progress-bar javascript"></div>
+        </div>
       </div>
 
-      <div class="skill-card">
-        <div class="skill-icon">04</div>
-        <h3>GitHub</h3>
-        <p>Version Control</p>
+
+      <div class="skill">
+        <div class="skill-top">
+          <span>GitHub</span>
+          <span>70%</span>
+        </div>
+        <div class="progress">
+          <div class="progress-bar github"></div>
+        </div>
       </div>
 
-      <div class="skill-card">
-        <div class="skill-icon">05</div>
-        <h3>AI Tools</h3>
-        <p>AI Creative Workflows</p>
-      </div>
 
-      <div class="skill-card">
-        <div class="skill-icon">06</div>
-        <h3>Prompt Engineering</h3>
-        <p>AI Prompt Design</p>
-      </div>
+      <div class="skill-tags">
 
-      <div class="skill-card">
-        <div class="skill-icon">07</div>
-        <h3>Graphic Design</h3>
-        <p>Digital Visual Design</p>
-      </div>
+        <span>AI Tools</span>
+        <span>Prompt Engineering</span>
+        <span>Graphic Design</span>
+        <span>Content Writing</span>
 
-      <div class="skill-card">
-        <div class="skill-icon">08</div>
-        <h3>Content Writing</h3>
-        <p>Creative & Digital Writing</p>
       </div>
 
     </div>
@@ -202,52 +222,40 @@
 
 
   <!-- EXPERIENCE -->
-  <section class="section beige-section" id="experience">
+  <section id="experience" class="section alternate">
 
-    <div class="section-title">
-      <span>04</span>
+    <div class="section-heading">
+      <p>MY JOURNEY</p>
       <h2>Experience</h2>
     </div>
 
     <div class="experience-card">
 
-      <div class="experience-top">
+      <div class="experience-date">
+        SEP<br>
+        2026
+      </div>
 
-        <div>
+      <div class="experience-content">
 
-          <p class="experience-label">INTERNSHIP</p>
+        <h3>Web Development Intern</h3>
 
-          <h3>Web Development Intern</h3>
+        <h4>SpireX Foundation</h4>
 
-          <h4>SpireX Foundation</h4>
+        <p>
+          Working on practical web development tasks involving
+          HTML, CSS, JavaScript, responsive design and front-end
+          development.
+        </p>
 
-        </div>
-
-        <div class="experience-date">
-          SEP 2026
+        <div class="experience-tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Responsive Design</span>
         </div>
 
       </div>
-
-      <div class="experience-line"></div>
-
-      <ul>
-        <li>
-          Developing responsive websites using HTML, CSS and JavaScript.
-        </li>
-
-        <li>
-          Building practical front-end development projects.
-        </li>
-
-        <li>
-          Improving UI design and responsive development skills.
-        </li>
-
-        <li>
-          Creating projects for a professional development portfolio.
-        </li>
-      </ul>
 
     </div>
 
@@ -255,31 +263,27 @@
 
 
   <!-- PROJECTS -->
-  <section class="section" id="projects">
+  <section id="projects" class="section">
 
-    <div class="section-title">
-      <span>05</span>
+    <div class="section-heading">
+      <p>MY WORK</p>
       <h2>Featured Projects</h2>
     </div>
 
-    <div class="projects-grid">
+    <div class="project-grid">
 
-
-      <div class="project-card">
+      <article class="project-card">
 
         <div class="project-number">01</div>
 
-        <div class="project-icon">⌘</div>
-
-        <h3>Personal Portfolio</h3>
+        <h3>Personal Portfolio Website</h3>
 
         <p>
           A responsive personal portfolio website created using
-          HTML, CSS and JavaScript to showcase skills,
-          experience and projects.
+          HTML, CSS and JavaScript to showcase my skills and projects.
         </p>
 
-        <div class="project-tags">
+        <div class="project-tech">
           <span>HTML</span>
           <span>CSS</span>
           <span>JavaScript</span>
@@ -287,55 +291,52 @@
 
         <a
           href="https://ayatjourney5-arch.github.io/personal-portfolio/"
-          target="_blank">
+          target="_blank"
+          class="project-link">
           View Project →
         </a>
 
-      </div>
+      </article>
 
 
-      <div class="project-card">
+      <article class="project-card">
 
         <div class="project-number">02</div>
-
-        <div class="project-icon">✦</div>
 
         <h3>AI Creative Projects</h3>
 
         <p>
-          Explored AI-powered tools for creating visuals,
-          videos, logos, branding concepts and digital content.
+          Creative digital projects using AI tools for image generation,
+          video concepts, branding, design and prompt engineering.
         </p>
 
-        <div class="project-tags">
+        <div class="project-tech">
           <span>AI</span>
           <span>Design</span>
-          <span>Prompting</span>
+          <span>Prompts</span>
         </div>
 
-      </div>
+      </article>
 
 
-      <div class="project-card">
+      <article class="project-card">
 
         <div class="project-number">03</div>
-
-        <div class="project-icon">◇</div>
 
         <h3>ZAHRA Boutique</h3>
 
         <p>
-          A fashion-focused website concept designed with
-          a modern visual style and digital branding approach.
+          A modern clothing brand website concept designed with a
+          clean and elegant user interface.
         </p>
 
-        <div class="project-tags">
+        <div class="project-tech">
           <span>Web Design</span>
           <span>UI</span>
           <span>Branding</span>
         </div>
 
-      </div>
+      </article>
 
     </div>
 
@@ -343,21 +344,21 @@
 
 
   <!-- INTERESTS -->
-  <section class="section beige-section">
+  <section class="section alternate">
 
-    <div class="section-title">
-      <span>06</span>
+    <div class="section-heading">
+      <p>BEYOND CODING</p>
       <h2>Interests</h2>
     </div>
 
-    <div class="interest-list">
+    <div class="interest-grid">
 
-      <span>Web Development</span>
-      <span>Artificial Intelligence</span>
-      <span>Digital Design</span>
-      <span>Creative Writing</span>
-      <span>Technology</span>
-      <span>Digital Content</span>
+      <div class="interest">💻 Web Development</div>
+      <div class="interest">🤖 Artificial Intelligence</div>
+      <div class="interest">🎨 Digital Design</div>
+      <div class="interest">✍️ Creative Writing</div>
+      <div class="interest">🚀 Technology</div>
+      <div class="interest">📱 Digital Content</div>
 
     </div>
 
@@ -365,30 +366,32 @@
 
 
   <!-- CONTACT -->
-  <section class="section contact-section" id="contact">
+  <section id="contact" class="section contact-section">
 
-    <div class="section-title">
-      <span>07</span>
+    <div class="section-heading">
+
+      <p>GET IN TOUCH</p>
+
       <h2>Let's Connect</h2>
-    </div>
 
-    <p class="contact-intro">
-      Have a project, opportunity or simply want to connect?
-      Feel free to reach out.
-    </p>
+      <p class="contact-subtitle">
+        Feel free to connect with me for opportunities,
+        collaborations or professional networking.
+      </p>
+
+    </div>
 
 
     <div class="contact-grid">
-
 
       <a
         href="mailto:hijabezahra182@gmail.com"
         class="contact-card">
 
-        <div class="contact-icon">✉</div>
+        <span class="contact-icon">✉️</span>
 
         <div>
-          <span>Email</span>
+          <small>Email</small>
           <strong>hijabezahra182@gmail.com</strong>
         </div>
 
@@ -400,10 +403,10 @@
         target="_blank"
         class="contact-card">
 
-        <div class="contact-icon">⌘</div>
+        <span class="contact-icon">💻</span>
 
         <div>
-          <span>GitHub</span>
+          <small>GitHub</small>
           <strong>ayatjourney5-arch</strong>
         </div>
 
@@ -412,13 +415,13 @@
 
       <a
         href="#"
-        class="contact-card"
-        id="linkedinLink">
+        id="linkedinLink"
+        class="contact-card">
 
-        <div class="contact-icon">in</div>
+        <span class="contact-icon">🔗</span>
 
         <div>
-          <span>LinkedIn</span>
+          <small>LinkedIn</small>
           <strong>Hijab Zahra</strong>
         </div>
 
@@ -435,17 +438,17 @@
     <div class="footer-logo">HZ.</div>
 
     <p>
-      Designed & Developed by <strong>Hijab Zahra</strong>
+      Designed & Developed by Hijab Zahra
     </p>
 
-    <p class="footer-tech">
-      HTML • CSS • JavaScript
-    </p>
-
-    <p class="copyright">
-      © <span id="year"></span> Hijab Zahra. All Rights Reserved.
+    <p>
+      © <span id="year"></span> Hijab Zahra. All rights reserved.
     </p>
 
   </footer>
 
-</div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
