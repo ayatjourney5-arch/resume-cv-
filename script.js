@@ -9,37 +9,60 @@ themeToggle.addEventListener("click", function () {
   document.body.classList.toggle("dark");
 
   if (document.body.classList.contains("dark")) {
-    themeToggle.textContent = "☀";
+
+    themeToggle.textContent = "☀️";
+
+    localStorage.setItem("theme", "dark");
+
   } else {
-    themeToggle.textContent = "☾";
+
+    themeToggle.textContent = "🌙";
+
+    localStorage.setItem("theme", "light");
+
   }
 
 });
 
 
 // ===============================
-// AUTOMATIC YEAR
+// REMEMBER THEME
 // ===============================
 
-document.getElementById("year").textContent =
-  new Date().getFullYear();
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme === "dark") {
+
+  document.body.classList.add("dark");
+
+  themeToggle.textContent = "☀️";
+
+}
 
 
 // ===============================
-// LINKEDIN PLACEHOLDER
+// AUTOMATIC COPYRIGHT YEAR
 // ===============================
 
-const linkedinLink =
-  document.getElementById("linkedinLink");
+const year = document.getElementById("year");
 
-linkedinLink.addEventListener("click", function(event) {
+year.textContent = new Date().getFullYear();
+
+
+// ===============================
+// LINKEDIN BUTTON
+// ===============================
+
+const linkedinLink = document.getElementById("linkedinLink");
+
+linkedinLink.addEventListener("click", function (event) {
 
   if (linkedinLink.getAttribute("href") === "#") {
 
     event.preventDefault();
 
     alert(
-      "Add your LinkedIn profile URL here before publishing."
+      "LinkedIn profile link can be added here."
     );
 
   }
@@ -51,14 +74,13 @@ linkedinLink.addEventListener("click", function(event) {
 // NAVIGATION ACTIVE EFFECT
 // ===============================
 
-const navLinks =
-  document.querySelectorAll(".nav-links a");
+const navLinks = document.querySelectorAll(".nav-links a");
 
-navLinks.forEach(function(link) {
+navLinks.forEach(function (link) {
 
-  link.addEventListener("click", function() {
+  link.addEventListener("click", function () {
 
-    navLinks.forEach(function(item) {
+    navLinks.forEach(function (item) {
       item.classList.remove("active");
     });
 
